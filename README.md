@@ -1,40 +1,60 @@
-# Diabetes + Social Media Integration Project
+# Diabetes ML Project (Kaggle Dataset)
 
-This project combines two analyses:
+This project has been updated to use the Kaggle diabetes prediction dataset instead of the older BRFSS 2015 file.
 
-1. Diabetes classification using structured health indicators.
-2. Social media text analysis to understand public discussions related to diabetes, symptoms, prevention, and support.
+## Dataset used
 
-The notebook is designed as a practical learning project and demonstrates an ethically responsible workflow. It uses a health dataset for classification and a synthetic social-media-style dataset to illustrate how text analysis can be integrated into the project.
+Dataset:
+https://www.kaggle.com/datasets/iammustafatz/diabetes-prediction-dataset/data
 
-## What is included
+The CSV file is usually named something like:
+- `diabetes_prediction_dataset.csv`
 
-- `diabetes_social_media_integration.ipynb`
-- Structured diabetes classification using health variables
-- Social text analysis for diabetes-related posts
-- Simple NLP pipeline for topic and sentiment analysis
-- Aggregated comparison of findings between the two data sources
+## Recommended location
 
-## Setup
+Place the dataset in a local `data/` folder:
+
+```bash
+mkdir -p data
+```
+
+Then copy the Kaggle file into:
+
+```bash
+data/diabetes_prediction_dataset.csv
+```
+
+## How to run
+
+1. Download the Kaggle file manually or via Kaggle API.
+2. Save it to `data/diabetes_prediction_dataset.csv`.
+3. Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## Run
+4. Open the notebook:
 
 ```bash
-jupyter notebook
+jupyter notebook diabetes_kaggle_eda_modeling_results.ipynb
 ```
 
-Open `diabetes_social_media_integration.ipynb`.
+## Project purpose
+
+This project demonstrates:
+
+- EDA for a diabetes prediction dataset
+- target distribution analysis and class imbalance checks
+- exploratory visualizations
+- preprocessing and modeling pipeline
+- classification metrics, confusion matrix, and ROC-AUC
+- interpretation of model findings
 
 ## Important note
 
-This project demonstrates the structure of a real integration workflow. In practice, if you want to use actual social media data, you must:
+This repository does not include the Kaggle dataset file itself due to licensing and size considerations. You must download it from Kaggle and place it in `data/` before running the notebook.
 
-- use public and legally collected data only,
-- avoid identifying individuals,
-- respect platform terms of service,
-- handle sensitive health information carefully,
-- use aggregated analysis instead of linking personal data to medical records unless consent and legal basis exist.
+## Notebook available
+
+- `diabetes_kaggle_eda_modeling_results.ipynb`
