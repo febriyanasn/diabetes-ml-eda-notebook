@@ -1,38 +1,28 @@
-# Diabetes EDA Notebook
+# Diabetes ML EDA & Modeling
 
-This repository contains a beginner-friendly Jupyter notebook for Exploratory Data Analysis (EDA) on the CDC Diabetes Health Indicators dataset.
+This repository provides a structured learning path for diabetes-related machine learning and EDA.
 
-## Project goal
+## Contents
 
-The notebook walks through a standard data science workflow:
+- `diabetes_eda_advanced.ipynb` — a polished advanced EDA notebook
+- `diabetes_eda_storytelling.ipynb` — a narrative-driven EDA notebook
+- `diabetes_modeling.ipynb` — model training and evaluation notebook
 
-- loading the dataset
-- checking shape and dtypes
-- cleaning and labeling categorical variables
-- identifying missing values
-- analyzing the target variable
-- visualizing feature distributions
-- comparing risk factors across diabetes status
-- summarizing key findings before modeling
-
-## How to run
-
-1. Clone this repository.
-2. Create a virtual environment (optional but recommended).
-3. Install dependencies:
+## Setup
 
 ```bash
 pip install -r requirements.txt
 ```
 
-4. Open the notebook:
+## Run notebooks
 
 ```bash
-jupyter notebook diabetes_eda.ipynb
+jupyter notebook
 ```
 
-## Dataset
+Then open the notebook you want to explore.
 
-The notebook uses the CDC Diabetes Health Indicators dataset (`diabetes_binary_health_indicators_BRFSS2015.csv`), which contains health and lifestyle variables related to diabetes risk.
+## Reference
 
-The analysis is inspired by the EDA workflow in the reference project: https://github.com/eviekenna/FinalProjectST558
+This project is inspired by the EDA workflow in:
+https://github.com/eviekenna/FinalProjectST558
